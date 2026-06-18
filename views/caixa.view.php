@@ -14,11 +14,17 @@
 <div class="container">
 
     <div class="col-esquerda">
-        <h2> <i class="fa-solid fa-basket-shopping"></i> Caixa Aberto - Registro de Itens</h2>
+        <h2><i class="fa-solid fa-cart-shopping"></i> Caixa Aberto - Registro de Itens</h2>
 
         <?php if ($erro): ?>
             <div class="alerta alerta-erro">
-                <i class="fa-solid fa-x"></i> <?= $erro ?>
+                <i class="fa-solid fa-xmark"></i> <?= $erro ?>
+            </div>
+        <?php endif; ?>
+
+        <?php if (isset($_SESSION['sucesso'])): ?>
+            <div class="alerta" style="background: #d4edda; color: #155724; border: 1px solid #c3e6cb;">
+                <i class="fa-solid fa-check"></i> <?= $_SESSION['sucesso']; unset($_SESSION['sucesso']); ?>
             </div>
         <?php endif; ?>
 
@@ -53,7 +59,7 @@
                             <td>R$ <?= number_format($item['preco'], 2, ',', '.') ?></td>
                             <td>R$ <?= number_format($subtotal, 2, ',', '.') ?></td>
                             <td>
-                                <a href="src/remover_item.php?index=<?= $index ?>" style="text-decoration: none;">❌</a>
+                                <a href="src/remover_item.php?index=<?= $index ?>" style="text-decoration: none;"><i class="fa-solid fa-xmark"></i></a>
                             </td>
                         </tr>
                     <?php endforeach; ?>
