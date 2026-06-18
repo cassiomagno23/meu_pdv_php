@@ -15,7 +15,7 @@
 
     <div class="col-esquerda">
         <h2><i class="fa-solid fa-cart-shopping"></i> Caixa Aberto - Registro de Itens</h2>
-
+        
         <?php if ($erro): ?>
             <div class="alerta alerta-erro">
                 <i class="fa-solid fa-xmark"></i> <?= $erro ?>

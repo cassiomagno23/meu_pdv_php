@@ -21,6 +21,8 @@
         }
     }
 
+    
+
 // 3. CARREGA A VIEW (O HTML SEPARADO)
 // Todas as variáveis criadas aqui em cima ficam disponíveis automaticamente dentro do arquivo abaixo
 require_once 'views/caixa.view.php';
