@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+  margin: 0;
+  background-color: #f5f6fa;
+  padding: 20px;
+}
+.container {
+  display: flex;
+  gap: 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.col-esquerda {
+  flex: 2;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+.col-direita {
+  flex: 1;
+  background: #2f3640;
+  padding: 20px;
+  border-radius: 8px;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Formulário e Inputs */
+.form-grupo {
+  margin-bottom: 20px;
+}
+.input-barras {
+  width: 100%;
+  padding: 12px;
+  font-size: 18px;
+  border: 2px solid #dcdde1;
+  border-radius: 4px;
+}
+.input-barras:focus {
+  border-color: #353b48;
+  outline: none;
+}
+
+/* Tabela */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+th,
+td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #dcdde1;
+}
+th {
+  background-color: #f1f2f6;
+  color: #2f3640;
+}
+
+/* Caixa de Total */
+.total-box {
+  font-size: 48px;
+  font-weight: bold;
+  color: #4cd137;
+  margin: 20px 0;
+  font-family: monospace;
+}
+
+/* Botões */
+.btn {
+  width: 100%;
+  padding: 15px;
+  font-size: 18px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.btn-finalizar {
+  background-color: #4cd137;
+  color: #fff;
+}
+.btn-cancelar {
+  background-color: #e84118;
+  color: #fff;
+}
+
+/* Alertas */
+.alerta {
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  font-weight: bold;
+  text-align: left;
+}
+.alerta-erro {
+  background: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
