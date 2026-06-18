@@ -16,7 +16,7 @@
             $produto = $stmt->fetch(PDO::FETCH_ASSOC);
 
             if(!$produto) {
-                $_SESSION['erro'] = "Produto com o '$codigo_barras' não cadastrado!";
+                $_SESSION['erro'] = "Produto com o código '$codigo_barras' não cadastrado!";
             }else {
                 if(!isset($_SESSION['carrinho'])) {
                     $_SESSION['carrinho'] = [];
