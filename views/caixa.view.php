@@ -14,6 +14,10 @@
 <div class="container">
 
     <div class="col-esquerda">
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+            <a href="estoque.php" id="botao-caixa-estoque">Ver Estoque</a>
+        </div>
+
         <h2><i class="fa-solid fa-cart-shopping"></i> Caixa Aberto - Registro de Itens</h2>
         
         <?php if ($erro): ?>
