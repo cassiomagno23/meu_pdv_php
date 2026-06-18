@@ -1,0 +1,43 @@
+body {
+  font-family: "Courier New", Courier, monospace; /* Fonte estilo cupom */
+  width: 280px;
+  margin: 10px auto;
+  padding: 10px;
+  background: #fff;
+  color: #000;
+  font-size: 12px;
+}
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+.linha-divisoria {
+  border-top: 1px dashed #000;
+  margin: 10px 0;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.tabela-itens th {
+  text-align: left;
+  border-bottom: 1px solid #000;
+  padding-bottom: 5px;
+}
+.tabela-itens td {
+  padding: 4px 0;
+}
+.total-box {
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Oculta os botões na hora em que mandar imprimir para o papel */
+@media print {
+  .btn-print {
+    display: none;
+  }
+}
