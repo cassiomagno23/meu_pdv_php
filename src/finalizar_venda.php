@@ -31,12 +31,23 @@
             VALUES (:venda_id, :produto_id, :quantidade, :preco_unitario)
         ");
 
+        $stmtBaixaEstoque = $conn->prepare("
+            UPDATE produtos
+            SET estoque = estoque - :quantidade_comprada
+            WHERE id = :produto_id
+        ");
+
         foreach ($_SESSION['carrinho'] as $item) {
         $stmtItem->execute([
             'venda_id' => $vendaId,
             'produto_id' => $item['id'],
             'quantidade' => $item['quantidade'],
             'preco_unitario' => $item['preco']
+        ]);
+
+        $stmtBaixaEstoque->execute([
+            'quantidade_comprada' => $item['quantidade'],
+            'produto_id' => $item['id']
         ]);
     }
         $conn->commit(); // Confirma e grava no banco
