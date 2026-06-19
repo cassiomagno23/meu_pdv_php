@@ -65,6 +65,12 @@ th {
   color: #2f3640;
 }
 
+#info-lista-preco {
+  text-align: center;
+  color: #7f8c8d;
+  padding: 30px;
+}
+
 /* Caixa de Total */
 .total-box {
   font-size: 48px;
@@ -93,6 +99,10 @@ th {
   background-color: #e84118;
   color: #fff;
 }
+.btn-cupom {
+  background-color: #00a8ff;
+  color: white;
+}
 
 /* Alertas */
 .alerta {
@@ -101,6 +111,9 @@ th {
   border-radius: 4px;
   font-weight: bold;
   text-align: left;
+  background: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
 }
 .alerta-erro {
   background: #f8d7da;

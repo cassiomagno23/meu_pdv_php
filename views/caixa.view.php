@@ -27,7 +27,7 @@
         <?php endif; ?>
 
         <?php if (isset($_SESSION['sucesso'])): ?>
-            <div class="alerta" style="background: #d4edda; color: #155724; border: 1px solid #c3e6cb;">
+            <div class="alerta">
                 <i class="fa-solid fa-check"></i> <?= $_SESSION['sucesso']; unset($_SESSION['sucesso']); ?>
             </div>
         <?php endif; ?>
@@ -69,7 +69,7 @@
                     <?php endforeach; ?>
                 <?php else: ?>
                     <tr>
-                        <td colspan="7" style="text-align: center; color: #7f8c8d; padding: 30px;">
+                        <td colspan="7" id="info-lista-preco">
                             Nenhum produto registrado nesta venda.
                         </td>
                     </tr>
@@ -93,7 +93,7 @@
             </div>
             <div>
                 <div class="total-box">R$ <?= number_format($ultima_venda['total'], 2, ',', '.') ?></div>
-                <button onclick="window.open('cupom.php', 'Cupom', 'width=320,height=600')" class="btn" style="background-color: #00a8ff; color: white;"> <i class="fa-solid fa-print"></i> Imprimir Cupom</button>
+                <button onclick="window.open('cupom.php', 'Cupom', 'width=320,height=600')" class="btn btn-cupom"> <i class="fa-solid fa-print"></i> Imprimir Cupom</button>
                 <form action="src/nova_venda.php" method="POST">
                     <button type="submit" class="btn btn-finalizar">Próximo Cliente</button>
                 </form>
@@ -107,7 +107,7 @@
             </div>
             <div>
                 <form action="src/finalizar_venda.php" method="POST">
-                    <button type="submit" class="btn btn-finalizar">Finalizar Venda (F2)</button>
+                    <button type="submit" class="btn btn-finalizar">Finalizar Venda</button>
                 </form>
                 <form action="src/limpar_carrinho.php" method="POST">
                     <button type="submit" class="btn btn-cancelar">Cancelar Venda</button>
