@@ -52,6 +52,17 @@
             <?php endforeach; ?>
         </tbody>
     </table>
+    <section>
+        <h2>Cadastrar Produtos</h2>
+        <form action="src/cadastrar_produto.php" method="POST" class="form-produtos">
+            <input type="text" name="codigo_produto" class="inserir-produto" placeholder="Insira o codigo de barras do produto" required>
+            <input type="text" name="nome_produto" class="inserir-produto" placeholder="Insira o nome do produto" required>
+            <input type="number" name="quantidade_produto" class="inserir-produto" placeholder="Insira a quantidade" required>
+            <input type="number" step="0.01" min="0" name="preco_produto" class="inserir-produto" placeholder="Insira o preço do produto" required>
+            
+            <input type="submit" class="btn-incluir-produto" value="Incluir Produto">
+        </form>
+    </section>
 </div>
 
 </body>

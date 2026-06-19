@@ -8,7 +8,7 @@
         $novo_estoque = (int)$_POST['estoque'];
 
         try {
-            $stmt = $conn->prepare("UPDATE protudos SET estoque = :estoque WHERE id = :id");
+            $stmt = $conn->prepare("UPDATE produtos SET estoque = :estoque WHERE id = :id");
             $stmt->execute([
                 'estoque' => $novo_estoque,
                 'id' => $id
