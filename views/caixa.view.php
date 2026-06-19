@@ -93,7 +93,7 @@
             </div>
             <div>
                 <div class="total-box">R$ <?= number_format($ultima_venda['total'], 2, ',', '.') ?></div>
-                <button onclick="window.open('cupom.php', 'Cupom', 'width=320,height=600')" class="btn btn-cupom"> <i class="fa-solid fa-print"></i> Imprimir Cupom</button>
+                <button onclick="window.open('cupom.php', 'Cupom', 'width=320,height=600')" class="btn btn-cupom"> <i class="fa-solid fa-print"></i>Imprimir Cupom</button>
                 <form action="src/nova_venda.php" method="POST">
                     <button type="submit" class="btn btn-finalizar">Próximo Cliente</button>
                 </form>

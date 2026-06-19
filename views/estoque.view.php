@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Controle de Estoque</title>
     <link rel="stylesheet" href="css/estoque.css">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 
@@ -15,7 +17,7 @@
     </div>
 
     <?php if ($sucesso): ?>
-        <div class="alerta alerta-sucesso">✅ <?= $sucesso ?></div>
+        <div class="alerta alerta-sucesso"><i class="fa-solid fa-check"></i> <?= $sucesso ?></div>
     <?php endif; ?>
 
     <table>
